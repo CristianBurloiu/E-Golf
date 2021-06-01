@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>VW</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/logo.png">
+
+    <link href="./css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/app.css" rel="stylesheet">
+    <link href="./css/fontawesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="spyre-navbar navbar navbar-expand-lg bg-secondary navbar-dark fixed-top align-items-center"
+        data-transparent data-text-color="#ffffff">
+        <div class="container">
+            <a class="navbar-brand mr-lg-5 mr-xl-7" href="index.html">
+                <img src="./images/logo.png" class="d-none d-lg-block" alt="Spyre" width="183" />
+            </a>
+
+            <span class="navbar-text flex-fill d-none d-md-inline-block text-white">
+
+                <a href="#gallery" class="pl-5 text-white">Gallery</a>
+                <a href="#design" class="pl-5 text-white">Design </a>
+
+                <a href="#efficiency" class="pl-5 text-white">Efficiency</a>
+
+                <a href="#review" class="pl-5 text-white">Reviews</a>
+                <a href="#interest" class="pl-5 text-white">Interest</a>
+            </span>
+
+            <div class="search d-none d-lg-flex justify-content-end ml-auto mr-2">
+                <input class="form-control mr-2" type="text">
+                <i class="zmdi zmdi-search"></i>
+            </div>
+
+            <div class="menu-toggle btn btn-default" id="toggle-button">
+                <div class=" hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="cross">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu-overlay" class="spyre-navbar-overlay overlay-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="spyre-navbar-nav-container col-md-4  bg-white ext-l">
+                        <div class="d-flex flex-column flex-shrink-0 p-3 mt-5">
+                            <a href="/"
+                                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                                <svg class="bi me-2" width="40" height="32">
+                                    <use xlink:href="#bootstrap"></use>
+                                </svg>
+                            </a>
+                            <hr>
+                            <ul class="nav nav-pills flex-column mb-auto">
+                                <li>
+                                    <a href="#" id="nav-close" class="nav-link link-dark">
+                                        Close X
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="nav-gallery" href="#gallery" class="nav-link link-dark">
+                                        Gallery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="nav-design" href="#design" class="nav-link link-dark">
+                                        Design
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="nav-efficiency" href="#efficiency" class="nav-link link-dark">
+                                        Efficiency
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="nav-review" href="#review" class="nav-link link-dark">
+                                        Review
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a id="nav-interest" href="#interest" class="nav-link link-dark">
+                                        Interest
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of Header -->
+    <!-- Main Content -->
+    <main class="main minh-100vh">
+        <!-- Section -->
+        <section class="py-0 overflow-hidden text-center">
+
+            <video autoplay muted loop id="myVideo">
+                <source src="./vedios/vwv.mp4" type="video/mp4">
+                <p id="state">pause</p>
+            </video>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="col-auto" style="margin-top: -200px;">
+                        <svg width="104" height="104" id='pause'>
+                            <circle id="circle" cx="51" cy="51" r="50" stroke-dasharray="314" stroke-dashoffset="0"
+                                style="stroke-width:2px;stroke:white;" />
+                            <line id='line1' x1="38" y1="30" x2="38" y2="70"
+                                style="stroke-width:4px;stroke:white;stroke-linecap: round;" />
+                            <path id='line2' d="M 66 30 L 66 50 L 66 70" rx="10" ry="10"
+                                style="stroke-width:4px;stroke:white;fill:white;stroke-linejoin: round;stroke-linecap: round;">
+                                <animate attributeName="d" dur="300ms" from="M 66 30 L 66 50 L 66 70"
+                                    to="M 38 30 L 70 50 L 38 70" begin="indefinite" fill="freeze"
+                                    id="from_pause_to_play" />
+                            </path>
+                            <animate xlink:href="#line2" attributeName="d" dur="300ms" from="M 38 30 L 70 50 L 38 70"
+                                to="M 66 30 L 66 50 L 66 70" fill="freeze" id="from_play_to_pause" begin="indefinite" />
+                        </svg>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Section -->
+
+        <!-- Section -->
+        <section id="">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+
+                        <h2 class="mb-5 fw-medium text-secondary text-uppercase text-home">Designed for life. </h2>
+                        <p>Enjoy the dynamic German electric hatchback. Ready for your next advernture in mind.</p>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+
+                        <div class="row mt-5">
+                            <div class="col-md-3">
+                                <h2 class="text-home">Electric</h2><small>Plug in</small>
+                            </div>
+                            <div class="col-md-3">
+                                <h2 class="text-home">144 <small class="small">miles</small></h2><small>Electric
+                                    range</small>
+                            </div>
+                            <div class="col-md-3">
+                                <h2 class="text-home">AWD </h2> <small class="small">Drive</small>
+                            </div>
+                            <div class="col-md-3">
+                                <h2 class="text-home">341 <small class="small">litres</small></h2><small>Cargo</small>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Section -->
+        <section id="gallery" class="py-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 order-lg-2 py-6 py-lg-9 px-0">
+                        <div class="grid">
+                            <div class="row no-gutters mt-neg-3">
+                                <div class="col-12 col-lg-12 p-3 grid-item art vision">
+                                    <a data-fancybox="gallery" href="./images/car.webp"><img
+                                            class="image-zoom img-fluid w-100" src="./images/car.webp"
+                                            alt="Image 05" /></a>
+                                </div>
+                                <div class="col-md-6 col-lg-6 p-3 grid-item print vision">
+                                    <a data-fancybox="gallery" href="./images/car1.jpeg"><img
+                                            class="image-zoom img-fluid w-100" src="./images/car1.jpeg"
+                                            alt="Image 01" /></a>
+                                </div>
+                                <div class="col-md-6 col-lg-6 p-3 grid-item identity vision">
+                                    <a data-fancybox="gallery" href="./images/car2.jpeg"><img
+                                            class="image-zoom img-fluid w-100" src="./images/car2.jpeg"
+                                            alt="Image 03" /></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="efficiency" class="py-5 mb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 ">
+                        <img class="img-fluid w-100 image-zoom" src="./images/car3.webp" alt="Image 01">
+                    </div>
+                    <div class="col-md-4  p-5">
+                        <h2 id="job-description" class="mb-5 text-uppercase">Powerful, <strong>efficiency and
+                                sustainable</strong></h2>
+                        <p class="mb-4 text-800 fw-medium">The e-Golf is everything you'd expect from a. Volkswagen and
+                            more. Exceptional handling, acceleration and grip combined with a supremely quiet drive and
+                            an impressive range of 144 miles (WLTP). Why wouldn't you go electric?</p>
+                        <a href="#interest" class=" text-secondary">Contact Me <i class="fa fa-edit"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="design" class="py-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-5 fw-medium text-secondary text-uppercase">Design</h2>
+                    <p>Everything you love about the Golf on the outside. Everything you'll love about the e‑Golf on the
+                        inside.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 ">
+                    <img class="img-fluid w-100" id="design-image" src="./images/car5.webp" alt="Image 01">
+                </div>
+                <div class="col-md-4  p-5">
+                    <div class="accordion faq" id="accordionFaq">
+                        <div class="card">
+                            <div class="card-header" id="faq1">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#Exterior" id="exterior-btn" aria-expanded="true"
+                                        aria-controls="Exterior">
+                                        Exterior
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="Exterior" class="collapse show" aria-labelledby="faq1" data-parent="#accordionFaq">
+
+                                <div class="card-body">
+
+                                    <h2 id="job-description" class="mb-5 "></strong><br> <strong>Instantly </strong>
+                                        recognisable</h2>
+                                    <p>The e‑Golf retains the classic styling of the Golf, with its own
+                                        electric twist. LED headlights, C-shaped running lights and signature blue flash
+                                        across the
+                                        front grille..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faq1">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#interior" id="interior-btn" aria-expanded="false"
+                                        aria-controls="interior">
+                                        Interior
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="interior" class="collapse" aria-labelledby="faq1" data-parent="#accordionFaq">
+
+                                <div class="card-body">
+
+                                    <h2 id="job-description" class="mb-5 "></strong><br> <strong>Comfortably </strong>
+                                        roomy</h2>
+                                    <p>The surprisingly spacious interior of the e‑Golf combines style, practicality and
+                                        comfort with unique touches like the electric blue stitching on the
+                                        leather-wrapped steering wheel.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="faq2">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#ligts" id="lights-btn" aria-expanded="false"
+                                        aria-controls="ligts">
+                                        Lights
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="ligts" class="collapse">
+                                <div class="card-body">
+                                    <h2 id="job-description" class="mb-5 "></strong><br> <strong>Less energy, </strong>
+                                        more power </h2>
+                                    <p>The e‑Golf's highly efficient LED headlights use far less energy than
+                                        conventional headlights, with no compromise on brightness.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="faq3">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#wheels" id="wheels-btn" aria-expanded="false"
+                                        aria-controls="wheels">
+                                        Wheels
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="wheels" class="collapse">
+                                <div class="card-body">
+                                    <h2 id="job-description" class="mb-5 "></strong><br> <strong>Aerodynamic </strong>
+                                        alloys</h2>
+                                    <p>The 16-inch ‘Tileve’ alloy wheels have been specially built to be
+                                        extra-aerodynamic. The reduced drag means they actually help the car save
+                                        energy..</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="py-5 mb-5">
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 ">
+                    <img class="img-fluid w-100" src="./images/car6.webp" alt="Image 01">
+                </div>
+                <div class="col-md-4  p-5">
+                    <h2 id="job-description" class="mb-5 "><small>Driver Assistance</small></strong><br>
+                        There when <strong>you need it</strong></h2>
+                    <p class="mb-4 text-800 fw-medium">The e‑Golf features the full suite of Volkswagen driver
+                        assistance, including Adaptive Cruise Control, Front Assist, Blind Spot Sensor, Park Assist,
+                        Traffic Jam Assist and Emergency Assist to bring the car to a controlled stop if you are unable
+                        to.</p>
+                    <a href="https://www.volkswagen.co.uk/technology/driver-assist"
+                        class="btn btn-lg bg-secondary text-white px-6">Find Out More</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="review" class="py-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-5 fw-medium text-secondary text-uppercase">Reviews and awards</h2>
+                    <p>Read the latest Golf's reviews and awards.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 ">
+                    <img class="img-fluid w-100" id="review-image" src="./images/review.webp" alt="Image 01">
+                </div>
+                <div class="col-md-4  p-5">
+                    <div class="accordion faq" id="accordionFaq">
+                        <div class="card">
+                            <div class="card-header" id="faq1">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#review" id="review-btn" aria-expanded="true"
+                                        aria-controls="review">
+                                        What a car?
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="review" class="collapse show" aria-labelledby="faq1" data-parent="#accordionFaq">
+
+                                <div class="card-body">
+
+                                    <h2 id="job-description" class="mb-5 "></strong><br> <strong>Review </strong>
+                                    </h2>
+                                    <p>“The Golf succeeds because it works brilliantly as an electric car yet it doesn’t
+                                        compromise on practicality, equipment, or driving dynamics.</p>
+                                    <a href="https://www.whatcar.com/volkswagen/e-golf/hatchback/review/"
+                                        class="btn btn-lg bg-secondary text-white px-6">Find Out More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faq1">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#honest" id="honest-btn" aria-expanded="false"
+                                        aria-controls="honest">
+                                        Honest John
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="honest" class="collapse" aria-labelledby="faq1" data-parent="#accordionFaq">
+
+                                <div class="card-body">
+
+                                    <h2 id="job-description" class="mb-5 "></strong><br> <strong>Honest John's </strong>
+                                        e‑Golf review </h2>
+                                    <p>TAn all-electric Golf. Eco nirvana, right? Yes, actually. In more ways than one.
+                                        Mark shows you why. Want some more car-based advice?.</p>
+                                    <a href="http://www.honestjohn.co.uk/"
+                                        class="btn btn-lg bg-secondary text-white px-6">Find Out More</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="faq2">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#people" id="people-btn" aria-expanded="false"
+                                        aria-controls="people">
+                                        Volkswagen with DrivingElectric
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="people" class="collapse">
+                                <div class="card-body">
+                                    <h2 id="job-description" class="mb-5 "></strong><br> <strong>We put it , </strong>
+                                        to the people </h2>
+                                    <p>The only way to truly experience the thrill of electric is to drive the e‑Golf.
+                                        So we invited some first-timers to do just that..</p>
+                                    <a href="https://youtu.be/d523uVLgOrA"
+                                        class="btn btn-lg bg-secondary text-white px-6">Find Out More</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="interest" class="py-5 mb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2 class="mb-5 fw-medium text-secondary text-uppercase">Submit an interest</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+
+                    <div class="col-md-8">
+                        <img class="img-fluid w-100 image-zoom" id="review-image" src="./images/interest.webp"
+                            alt="Image 01">
+                    </div>
+                    <div class="col-md-4">
+                        <h2 id="apply-now" class="mb-5 text-uppercase">Submit Interest</h2>
+                        <div class="row">
+                            <form class="form col-lg-10 col-xl-9">
+                                <div class="form-group mb-4">
+                                    <input type="text" class="form-control" id="name" placeholder="Full name">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input type="email" class="form-control" id="email" placeholder="Email address">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <textarea class="form-control" rows="8" id="message"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-block ">Send<i
+                                        class="zmdi zmdi-mail-send ml-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- End of Main Content -->
+    <!-- Footer -->
+    <footer class="footer text-white">
+        <div class="container d-flex ">
+            <div class="row flex-grow-1">
+
+
+                <div class="col d-flex flex-column mb-2 mt-3 pl-lg-7">
+
+
+                    <div class="mt-auto d-flex justify-content-between">
+                        <span class="fs--3 fs-lg--2"> <img src="./images/logo.png" alt="" width="92" class="mb-4" />
+                            e-Golf 2021
+                        </span>
+                        <button type="button" class="btn btn-pr btn-floating btn-lg" id="btn-back-to-top">
+                            Top
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Core Javascripts -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Theme Javascripts -->
+</body>
+</html>
